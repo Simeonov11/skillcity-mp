@@ -4,7 +4,7 @@ export default function ProjectItem({ name, url}) {
             <p>
                 {name}
             </p>
-            <a href="${url}" target="_blank">Link to the website</a>
+            <a href={`${url}`} target="_blank">Link to the website</a>
         </div>
     )
 }
