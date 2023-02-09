@@ -27,7 +27,7 @@ export default function ProjectGrid() {
                             <ProjectItem
                                 name={project.name}
                                 url={project.url}
-                                imgUrl={project.imgUrl}
+                                imgUrl={project.img_url} // in the DB it is img_url, if you take if from project-grid/projects it change it to imgUrl
                             ></ProjectItem>
                         )
                     })}
