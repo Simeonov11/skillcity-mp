@@ -10,17 +10,11 @@ export default function ProjectGrid() {
                             <ProjectItem
                                 name={project.name}
                                 url={project.url}
+                                imgUrl={project.imgUrl}
                             ></ProjectItem>
                         )
                     })}
-                    <p>
-                        Web Store Pet Planet
-                    </p>
-                    <a href="https://www.petplanet.co.uk/" target="_blank">Link to the website</a>
-                
-
-                
-                    
+                                        
                 </div>
                 
             
