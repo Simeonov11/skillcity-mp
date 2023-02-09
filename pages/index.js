@@ -2,6 +2,7 @@ import Header from "@/components/shared/header"
 import Bio from "@/components/home/bio"
 import Skills from "@/components/home/skills"
 import Content from "@/components/shared/header/content"
+import Footer from "@/components/shared/footer/footer"
 
 export default function Home() {
   return (
@@ -21,9 +22,10 @@ export default function Home() {
         </div>
       </Content>
 
-      <div className="bg-red-200">
-        <a href="/projects">Go to Projects page</a>
-      </div>
+      <Footer 
+        href="/projects"
+        title="Projects"
+      />
       
     </div>
   )

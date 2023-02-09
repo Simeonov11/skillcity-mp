@@ -1,6 +1,6 @@
 import Header from "@/components/shared/header";
-
 import ProjectGrid from "../components/project-grid";
+import Footer from "@/components/shared/footer/footer";
 
 export default function ProjectsPage() {
     return (
@@ -11,9 +11,10 @@ export default function ProjectsPage() {
 
             <ProjectGrid />
             
-            <div>
-                <a href="/">Go to home page</a>
-            </div>
+            <Footer 
+                href="/"
+                title="Home"
+            />
         </div>
     )
 }
