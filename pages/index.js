@@ -4,7 +4,7 @@ import Skills from "@/components/home/skills"
 
 export default function Home() {
   return (
-    <div className="w-full  bg-red-100 w-full max-w-6xl mx-auto">
+    <div className="w-full bg-blue-100  w-full max-w-6xl mx-auto">
       <Header 
         name="Home"
       />
@@ -16,7 +16,7 @@ export default function Home() {
 
       <Skills />
 
-      <div>
+      <div className="bg-red-200">
         <a href="/projects">Go to Projects page</a>
       </div>
       
