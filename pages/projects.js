@@ -1,11 +1,13 @@
+import Header from "@/components/header";
+
 import ProjectGrid from "../components/project-grid";
 
 export default function ProjectsPage() {
     return (
         <div className="bg-green-100 w-full max-w-6xl mx-auto">
-            <p>
-                Projects
-            </p>
+            <Header
+                name="Projects"
+            />
 
             <ProjectGrid />
             
