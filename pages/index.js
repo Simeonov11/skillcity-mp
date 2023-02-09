@@ -1,6 +1,7 @@
 import Header from "@/components/shared/header"
 import Bio from "@/components/home/bio"
 import Skills from "@/components/home/skills"
+import Content from "@/components/shared/header/content"
 
 export default function Home() {
   return (
@@ -14,7 +15,11 @@ export default function Home() {
         subtitle="I am Junior Software Engineer"
       />
 
-      <Skills />
+      <Content>
+        <div className="w-full flex flex-col">
+          <Skills />
+        </div>
+      </Content>
 
       <div className="bg-red-200">
         <a href="/projects">Go to Projects page</a>
