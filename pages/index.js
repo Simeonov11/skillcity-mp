@@ -1,4 +1,4 @@
-import Header from "@/components/header"
+import Header from "@/components/shared/header"
 import Bio from "@/components/home/bio"
 import Skills from "@/components/home/skills"
 

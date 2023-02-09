@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/shared/header";
 
 import ProjectGrid from "../components/project-grid";
 
