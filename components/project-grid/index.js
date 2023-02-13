@@ -17,7 +17,7 @@ export default function ProjectGrid() {
         const response = await data.json();
         setProjectsApi(response);
     }
-
+    
 
     return(
         <div className="w-full flex flex-col">
@@ -25,9 +25,12 @@ export default function ProjectGrid() {
                     {projectsApi.map((project) => {
                         return (
                             <ProjectItem
+                                idApi={project.id}
                                 name={project.name}
                                 url={project.url}
                                 imgUrl={project.img_url} // in the DB it is img_url, if you take if from project-grid/projects it change it to imgUrl
+                                likesApi={project.likes}
+                                dislikesApi={project.dislikes}
                             ></ProjectItem>
                         )
                     })}

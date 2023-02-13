@@ -1,17 +1,25 @@
 import { useState } from "react"
 
-export default function ProjectItem({ name, url, imgUrl}) {
-    const [likes, setLikes] = useState(0);
-    const [dislikes, setDislikes] = useState(0);
+export default function ProjectItem({ idApi, name, url, imgUrl, likesApi, dislikesApi}) {
+    const [likes, setLikes] = useState(+likesApi);
+    const [dislikes, setDislikes] = useState(+dislikesApi);
 
-    const handleIncrementLike = () => {
-        let newValue = likes + 1;
-        setLikes(newValue);
+    const handleIncrementLike = async () => {
+        let newLikes = likes + 1;
+        setLikes(newLikes);
+
+        const id = +idApi;
+        const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`);
+        const dataLikes = await response.json();
     }
 
-    const handleDecrementLike = () => {
-        let newValue = dislikes + 1;
-        setDislikes(newValue);
+    const handleDecrementLike = async () => {
+        let newDislikes = dislikes + 1;
+        setDislikes(newDislikes);
+
+        const id = +idApi;
+        const response = await fetch(`/api/increase-dislikes?id=${id}&dislikes=${newDislikes}`);
+        const dataDislikess = await response.json();
     }
     
 

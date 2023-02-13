@@ -6,7 +6,7 @@ export default async function skillsHandler(req, res) {
     `
 
     res.json(projects);
-
+    
     /* const skills = [
         { name: "Web Store Pet Planet" , url: "https://www.petplanet.co.uk/", imgUrl: "assets/1.png"},
         { name: "Counter React App" , url: "https://arnab-datta.github.io/counter-app/", imgUrl: "assets/2.png"},
