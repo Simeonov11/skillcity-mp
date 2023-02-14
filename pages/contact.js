@@ -32,6 +32,9 @@ export default function Contact () {
         setEmail("");
         setMessage("");
         setShowSuccess(true);
+        setTimeout(() => {
+            setShowSuccess(false);
+        },3000);
     } 
 
     return(
