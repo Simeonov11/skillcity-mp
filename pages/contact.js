@@ -56,7 +56,7 @@ export default function Contact () {
         <div className="w-full bg-red-100  w-full max-w-6xl mx-auto px-4">
             <Header name="Contact"/>
             <Content>
-                <form className="flex flex-col space-y-3">
+                <form className="flex flex-col space-y-3 w-full sm:w-96" >
                     <Input
                         placeholder="Name" 
                         value={name}
@@ -70,13 +70,13 @@ export default function Contact () {
                     />
                     <textarea
                         placeholder="Message"
-                        className="bg-gray-200 py-3 px-6 rounded w-96"
+                        className="bg-gray-200 py-3 px-6 rounded w-full"
                         value={message}
                         onChange={handleChangeMessage}
                     
                     />
                     <button
-                        className="bg-blue-500 py-3 px-6 w-96 rounded text-white"
+                        className="bg-blue-500 py-3 px-6 w-full rounded text-white"
                         onClick={handleSubmit}
                         type="button"
                     >
@@ -84,16 +84,15 @@ export default function Contact () {
                     </button>
 
                     {showSuccess === true ?
-                        (<p className="text-green-500 w-96">
+                        (<p className="text-green-500 w-full">
                             Your Message was sent!
                         </p>)
                     :
                         (null)
                     }
-                    
-                    <ListOfMessages isLoading={isLoading} messages={messages}/>
 
                 </form>
+                <ListOfMessages isLoading={isLoading} messages={messages}/>
             </Content>
             <Footer title="Home" href="/"></Footer>
         </div>
