@@ -1,3 +1,4 @@
+import ListOfMessages from "@/components/contact/list-of-messages";
 import Input from "@/components/forms/input";
 import Footer from "@/components/shared/footer/footer";
 import Header from "@/components/shared/header";
@@ -67,6 +68,8 @@ export default function Contact () {
                         (null)
                     }
                     
+                    <ListOfMessages />
+
                 </form>
             </Content>
             <Footer title="Home" href="/"></Footer>
