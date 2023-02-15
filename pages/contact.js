@@ -3,13 +3,35 @@ import Input from "@/components/forms/input";
 import Footer from "@/components/shared/footer/footer";
 import Header from "@/components/shared/header";
 import Content from "@/components/shared/header/content";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact () {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [showSuccess, setShowSuccess] = useState(false);
+
+    const [messages, setMessages] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    
+
+    useEffect(() => {
+        getMessages();
+    }, []);
+
+    const getMessages = async () => {
+        setIsLoading(true);
+        const response = await fetch(`/api/contact-messages`);
+        const data = await response.json();
+
+        const { messages } = data;
+        
+        setMessages(messages);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 3000);
+        
+    }
 
     const handleChangeMessage = (event) => {
         const message = event.target.value;
@@ -24,6 +46,7 @@ export default function Contact () {
         setEmail("");
         setMessage("");
         setShowSuccess(true);
+        getMessages();
         setTimeout(() => {
             setShowSuccess(false);
         },3000);
@@ -68,7 +91,7 @@ export default function Contact () {
                         (null)
                     }
                     
-                    <ListOfMessages />
+                    <ListOfMessages isLoading={isLoading} messages={messages}/>
 
                 </form>
             </Content>
