@@ -21,7 +21,7 @@ export default function ProjectGrid() {
 
     return(
         <div className="w-full flex flex-col">
-                <div className="grid grid-cols-3 w-full bg-red-100">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full bg-red-100 text-center">
                     {projectsApi.map((project) => {
                         return (
                             <ProjectItem

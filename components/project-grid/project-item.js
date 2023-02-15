@@ -24,13 +24,13 @@ export default function ProjectItem({ idApi, name, url, imgUrl, likesApi, dislik
     
 
     return(
-        <div className="bg-yellow-100 p-4">
+        <div className="bg-yellow-100 p-5 mx-auto w-full">
             <img src={`${imgUrl}`} className="rounded-lg" w-24></img>
             <p>
                 {name}
             </p>
             <a href={`${url}`} target="_blank">Link to the website</a>
-            <div className="w-full flex flex-row">
+            <div className="w-full flex flex-row justify-center">
                 <div className="p-2">
                     <p className="text-red-600">
                         {likes} likes
