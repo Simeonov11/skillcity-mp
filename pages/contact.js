@@ -1,3 +1,4 @@
+import Input from "@/components/forms/input";
 import Footer from "@/components/shared/footer/footer";
 import Header from "@/components/shared/header";
 import Content from "@/components/shared/header/content";
@@ -9,14 +10,12 @@ export default function Contact () {
     const [message, setMessage] = useState("");
     const [showSuccess, setShowSuccess] = useState(false);
 
-    const handleChangeName = (event) => {
-        const name = event.target.value;
-        setName(name);
+    const handleChangeName = (value) => {
+        setName(value);
     }
     
-    const handleChangeEmail = (event) => {
-        const email = event.target.value;
-        setEmail(email);
+    const handleChangeEmail = (value) => {
+        setEmail(value);
     }
     
     const handleChangeMessage = (event) => {
@@ -42,15 +41,14 @@ export default function Contact () {
             <Header name="Contact"/>
             <Content>
                 <form className="flex flex-col space-y-3">
-                    <input
+                    <Input
                         placeholder="Name" 
-                        className="bg-gray-200 py-3 px-6 rounded w-96"
                         value={name}
                         onChange={handleChangeName}
                     />
-                    <input 
+                    
+                    <Input 
                         placeholder="Email"
-                        className="bg-gray-200 py-3 px-6 rounded w-96"
                         value={email}
                         onChange={handleChangeEmail}
                     />
