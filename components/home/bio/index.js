@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Bio( { imgUrl, title, subtitle }) {
     return(
         <div className="bg-red-200 max-w-6xl mx-auto">
@@ -8,6 +10,7 @@ export default function Bio( { imgUrl, title, subtitle }) {
                 <div className="w-full text-center md:text-left">
                     <h1 className="text-6xl font-bold text-gray-700 sm:text-green-600 md:text-blue-600 lg:text-red-600">{title}</h1>
                     <p className="text-xl text-gray-700">{subtitle}</p>
+                    <Link href="/contact" className="text-2xl font-bold text-red-500">Contact me</Link>
                 </div>
             </div>
       </div> 
