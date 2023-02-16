@@ -1,0 +1,38 @@
+[
+    {
+        "id": "manchester",
+        "title": "Manchester",
+        "visited_date": "Last week",
+        "img_url": "/assets/locations/manchester.png"
+    },
+    {
+        "id": "singapore",
+        "title": "Singapore",
+        "visited_date": "Last year",
+        "img_url": "/assets/locations/singapore.png"
+    },
+    {
+        "id": "san-francisco",
+        "title": "San Francisco",
+        "visited_date": "Jan 2022",
+        "img_url": "/assets/locations/san-francisco.png"
+    },
+    {
+        "id": "hong-kong",
+        "title": "Hong Kong",
+        "visited_date": "March 2019",
+        "img_url": "/assets/locations/hong-kong.png"
+    },
+    {
+        "id": "paris",
+        "title": "Paris",
+        "visited_date": "Jul 2017",
+        "img_url": "/assets/locations/paris.png"
+    },
+    {
+        "id": "new-york",
+        "title": "New York",
+        "visited_date": "May 2021",
+        "img_url": "/assets/locations/new-york.png"
+    }
+]
