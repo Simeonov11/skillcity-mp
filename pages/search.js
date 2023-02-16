@@ -5,11 +5,11 @@ import Content from "@/components/shared/header/content";
 
 export default function Search() {
     return(
-        <div className="w-full">
+        <div className="w-full bg-green-100 max-w-6xl mx-auto px-4">
             <Header name="Search"/>
 
             <Content>
-                <div className="w-full flex flex-row space-x-2">
+                <div className="w-full md:w-6/12 lg:w-4/12 flex flex-row space-x-2">
                     <Input />
                     <button
                         className="bg-blue-500 text-white px-6 py-2 rounded-md"
