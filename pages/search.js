@@ -1,4 +1,5 @@
 import Input from "@/components/forms/input";
+import LocationItem from "@/components/search/locations-item";
 import Footer from "@/components/shared/footer/footer";
 import Header from "@/components/shared/header";
 import Content from "@/components/shared/header/content";
@@ -45,9 +46,7 @@ export default function Search() {
 
                 <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
                     {locations.map((location) => (
-                        <div key={location.id} className="w-full h-40 bg-red-100">
-                            <p>{location.title}</p>
-                        </div>
+                        <LocationItem key={location.id} location={location} />
                     ))}
                     
                     
