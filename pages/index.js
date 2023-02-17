@@ -3,6 +3,7 @@ import Bio from "@/components/home/bio"
 import Skills from "@/components/home/skills"
 import Content from "@/components/shared/header/content"
 import Footer from "@/components/shared/footer/footer"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       <Content>
         <div className="w-full flex flex-col">
           <Skills />
+        </div>
+        <div className="w-full bg-yellow-100 p-4 text-center md:text-left">
+          <Link className="font-mediium text-4xl" href="/search"> May or may not visited places </Link>
         </div>
       </Content>
 
