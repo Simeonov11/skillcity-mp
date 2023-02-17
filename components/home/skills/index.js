@@ -2,7 +2,7 @@ import skills from "./skills"
 
 export default function Skills(){
     return(
-        <div className="w-full m-5">
+        <div className="w-full  p-5">
             <h1 className="font-mediium text-4xl">
                 Skills
             </h1>

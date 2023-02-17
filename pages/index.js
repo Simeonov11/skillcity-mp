@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-full flex flex-col">
           <Skills />
         </div>
-        <div className="w-full bg-yellow-100 p-4 text-center md:text-left">
+        <div className="w-full bg-yellow-100 p-5 text-center md:text-left">
           <Link className="font-mediium text-2xl" href="/search"> May or may not visited places </Link>
         </div>
       </Content>
