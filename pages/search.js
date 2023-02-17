@@ -51,7 +51,8 @@ export default function Search() {
 
             <Content>
                 <div className="w-full md:w-6/12 lg:w-4/12 flex flex-row space-x-2">
-                    <Input 
+                    <Input
+                        placeholder="Type exact name"
                         value={input}
                         onChange={value => setInput(value)}
                     />
