@@ -22,7 +22,7 @@ export default function Home() {
           <Skills />
         </div>
         <div className="w-full bg-yellow-100 p-4 text-center md:text-left">
-          <Link className="font-mediium text-4xl" href="/search"> May or may not visited places </Link>
+          <Link className="font-mediium text-2xl" href="/search"> May or may not visited places </Link>
         </div>
       </Content>
 
