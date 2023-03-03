@@ -4,17 +4,17 @@ export default async function handle(req, res) {
     const { name, email, message } = req.query;
 
     if (name === undefined) {
-        res.starus(400).json({ message: "Name is required"});
+        res.status(400).json({ message: "Name is required"});
         return;
     }
 
     if (email === undefined) {
-        res.starus(400).json({ message: "Email is required"});
+        res.status(400).json({ message: "Email is required"});
         return;
     }
 
     if (message === undefined) {
-        res.starus(400).json({ message: "Message is required"});
+        res.status(400).json({ message: "Message is required"});
         return;
     }
 
