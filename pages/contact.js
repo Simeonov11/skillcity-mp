@@ -26,7 +26,7 @@ export default function Contact () {
 
         const { messages } = data;
         
-        setMessages(messages);
+        setMessages(messages.reverse());
         setTimeout(() => {
             setIsLoading(false);
         }, 3000);
