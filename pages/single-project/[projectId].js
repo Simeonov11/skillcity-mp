@@ -41,7 +41,7 @@ export default function SingleProject () {
                     </div>
                     <div className="w-full text-center md:text-left">
                         <Link href={SingleProject.url}>{SingleProject.url}</Link>
-                        <div>{SingleProject.likes} likes</div>
+                        <div>{SingleProject.likes} likes | {SingleProject.dislikes} dislikes</div>
                     </div>
                     
                 </div>  
