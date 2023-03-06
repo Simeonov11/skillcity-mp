@@ -35,12 +35,15 @@ export default function SingleProject () {
         <div className="bg-green-100 w-full max-w-6xl mx-auto">
             <Header name={SingleProject.name} />
             <Content>
-                <div className="bg-green-100 m-5">
-                    <Link href={SingleProject.url}>{SingleProject.url}</Link>
-                    <div>{SingleProject.likes} likes</div>
+                <div className="w-full flex flex-col items-center py-4 space-y-4 md:flex-row md:space-x-4 md:p-3">
                     <div>
                         <img src={SingleProject.img_url}/>
                     </div>
+                    <div className="w-full text-center md:text-left">
+                        <Link href={SingleProject.url}>{SingleProject.url}</Link>
+                        <div>{SingleProject.likes} likes</div>
+                    </div>
+                    
                 </div>  
             </Content>
             <Footer href='/projects' title='Projects'/>
