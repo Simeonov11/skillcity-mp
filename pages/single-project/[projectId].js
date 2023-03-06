@@ -2,6 +2,7 @@ import Bio from "@/components/home/bio";
 import Footer from "@/components/shared/footer/footer";
 import Header from "@/components/shared/header";
 import Content from "@/components/shared/header/content";
+import Link from "next/link";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,7 @@ export default function SingleProject () {
             <Header name={SingleProject.name} />
             <Content>
                 <div className="bg-green-100 m-5">
-                    <div>{SingleProject.url}</div>
+                    <Link href={SingleProject.url}>{SingleProject.url}</Link>
                     <div>{SingleProject.likes} likes</div>
                     <div>
                         <img src={SingleProject.img_url}/>
