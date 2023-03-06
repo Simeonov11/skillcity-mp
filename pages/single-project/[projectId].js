@@ -35,8 +35,8 @@ export default function SingleProject () {
         <div className="bg-green-100 w-full max-w-6xl mx-auto">
             <Header name={SingleProject.name} />
             <Content>
-                <div className="w-full flex flex-col items-center py-4 space-y-4 md:flex-row md:space-x-4 md:p-3">
-                    <div>
+                <div className="w-full flex flex-col  py-4 space-y-4 md:flex-row md:space-x-4 md:p-3">
+                    <div className="mx-auto">
                         <img src={SingleProject.img_url}/>
                     </div>
                     <div className="w-full text-center md:text-left">
