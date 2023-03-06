@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react"
 
 export default function ProjectItem({ idApi, name, url, imgUrl, likesApi, dislikesApi}) {
@@ -25,7 +26,9 @@ export default function ProjectItem({ idApi, name, url, imgUrl, likesApi, dislik
 
     return(
         <div className="bg-yellow-100 p-5 mx-auto w-full">
-            <img src={`${imgUrl}`} className="rounded-lg" w-24></img>
+            <Link href={`/single-project/${idApi}`} className="text-xl font-medium">
+                <img src={`${imgUrl}`} className="rounded-lg" w-24></img>
+            </Link>
             <p>
                 {name}
             </p>
